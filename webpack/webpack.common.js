@@ -6,7 +6,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: {
     app: Path.resolve(__dirname, '../src/scripts/index.js'),
-    docs: Path.resolve(__dirname, '../src/scripts/docs.js')
+    docs: Path.resolve(__dirname, '../src/scripts/docs.js'),
+    'docs-v-01': Path.resolve(__dirname, '../src/scripts/docs-v-01.js'),
+    'docs-v02': Path.resolve(__dirname, '../src/scripts/docs-v-02.js'),
+    'docs-v03': Path.resolve(__dirname, '../src/scripts/docs-v-03.js')
   },
   output: {
     path: Path.join(__dirname, '../build'),
@@ -31,6 +34,21 @@ module.exports = {
       inject: true,
       chunks: ['docs'],
       filename: 'docs.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: Path.resolve(__dirname, '../src/docs-v-01.html'),
+      
+      filename: 'docs-v-01.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: Path.resolve(__dirname, '../src/docs-v-02.html'),
+     
+      filename: 'docs-v-02.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: Path.resolve(__dirname, '../src/docs-v-03.html'),
+     
+      filename: 'docs-v-03.html'
     })
   ],
   resolve: {

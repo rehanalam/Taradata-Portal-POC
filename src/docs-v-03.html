@@ -54,16 +54,19 @@
               <path class="b" d="M600.377,352.74a3.441,3.441,0,0,1-6.877,0,3.44,3.44,0,0,1,6.877,0"
                 transform="translate(-431.508 -64.575)" />
             </g>
-          </svg></a>
+          </svg>
+        </a>
       </div>
-
       <h1 class="heading">
         DOCUMENTATION
       </h1>
-
     </div>
     <div class="right">
-      <input class="search" placeholder="Search">
+      <select class="version-select" id="version-select" >
+        <option value="docs-v-01">Workload Management API</option>
+        <option value="docs-v-02">Automated Statistics Management API</option>
+        <option value="docs-v-03" selected>Machine Learning API</option>
+      </select>
       <button class="default-btn">
         Log In
       </button>
@@ -73,59 +76,60 @@
     </div>
   </header>
 
-  <main class="container">
-    <section class="cover-image-wrapper">
-      <h1>
-        Tap into the power of Teradata Vantage™
-      </h1>
-      <p>
-        Build innovative solutions with the most powerful analytical platform on the planet
-      </p>
-      <a href="/docs-v-01.html">
-        Get Started
-      </a>
-    </section>
-    <section class="api-list-wrapper">
-      <h1>LIST OF APIs</h1>
-      <div class="content-box-wrapper">
-        <div class="content-box">
-          <h3>
-            <span class="dot"></span>
-            Workload Management API
-            <span class="chevron right"></span>
-          </h3>
-          <p>
-            Create third-party applications and custom applications requiring the acquisition and use of Teradata
-            Database workload management and performance data.
-          </p>
-        </div>
-        <div class="content-box">
-          <h3>
-            <span class="dot"></span>
-            Automated Statistics Management API
-            <span class="chevron right"></span>
-          </h3>
-          <p>
-            The Automated Statistics Management open APIs can be issued from the Teradata Viewpoint Stats Manager
-            portlet or directly from within customer applications.
-          </p>
-        </div>
-      </div>
-      <div class="content-box-wrapper">
-        <div class="content-box">
-          <h3>
-            <span class="dot"></span>
-            Automated Statistics Management API
-            <span class="chevron right"></span>
-          </h3>
-          <p>
-            The ML Engine includes machine-learning functions for time series, graph, statistical, text, association,
-            clustering, pattern matching, and path analysis. Use a combination of structured, multi-structured, and
-            unstructured data types (e.g., text, numerical, tabular, file, CLOBs, and BLOBs) in the same workload.</p>
-        </div>
-      </div>
-    </section>
+  <main>
+    <noscript> You need to enable JavaScript to run this app. </noscript>
+
+    <script type="text/javascript">
+      var script = document.createElement("script");
+      script.src = "https://heuristic-pasteur-ac6ade.netlify.com/static/js/main.6a4ea7c8.js";
+      script.onload = function () {
+        APIMaticDevPortal.show({
+          container: 'apimatic-widget',
+          apiKey:
+            'ZyuGaAJ_wfeBo0GwdFzZHutX1Ymo3KbvO4zHRjxv47SAYc9KbGoc8aNPHqgbpss9',
+          baseUrl: 'https://www.apimatic.io',
+          enableExport: true,
+          renameHttpToRest: false,
+          enableConsoleCalls: true,
+          enableSdkDownload: true,
+          useProxyForConsoleCalls: true,
+          languageSettings: {
+            'docs-http': {},
+            cs_net_standard_lib: {
+              // disableSdkDownload:  true
+            },
+            java_gradle_android_lib: {
+              // disableSdkDownload:  true
+            },
+            objc_cocoa_touch_ios_lib: {
+              sdkDownloadLink: 'https://www.apimatic.io'
+            },
+            java_eclipse_jre_lib: {},
+            php_generic_lib: {},
+            python_generic_lib: {
+              sdkDownloadLink: 'https://www.apimatic.io',
+              // disableSdkDownload:  true
+            },
+            ruby_generic_lib: {},
+            angular_javascript_lib: {},
+            node_javascript_lib: {
+              // disableSdkDownload:  true
+            },
+            go_generic_lib: {}
+          },
+
+          themeOverrides: {
+            themeType: 'cool',
+            palette: {
+              primaryColor: '#f37440'
+            }
+          }
+        });
+      };
+      document.getElementsByTagName("head")[0].appendChild(script);
+    </script>
+    <div id="apimatic-widget"></div>
   </main>
 </body>
-
+<script src="/src/scripts/version-selector.js"></script>
 </html>
