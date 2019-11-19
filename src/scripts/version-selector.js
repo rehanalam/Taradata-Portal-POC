@@ -9,5 +9,5 @@
             var url = protocol + "//" + host + "/" + selectedVersion + '.html';
             window.location.href = url;
         });
-    }
+    };
 })();

@@ -60,7 +60,9 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: 30px;
-
+      > a {
+        text-decoration: none;
+      }
       .content-box {
         width: 480px;
         min-height: 173px;
